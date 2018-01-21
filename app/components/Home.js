@@ -38,16 +38,29 @@ export default class Home extends Component {
   render() {
     const TaskList = this.state.list.map( (item) => {
       return(
-        <ul>
-          <li> {item.description} </li>
-        </ul>
+        <tr>
+          <td>{item.description}</td>
+          <td>{item.date}</td>
+          <td>{item.priority}</td>
+        </tr>
       )
     })
     return (
       <div>
         <div className={styles.container} data-tid="container">
-          <h2>Home is where the heart is</h2>
-          {TaskList}
+          <h2>m2do List</h2>
+          <div className={styles.taskList}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Due Date</th>
+                  <th>Priority</th>
+                </tr>                
+              </thead>
+              {TaskList}
+            </table>
+          </div>
         </div>
       </div>
     );

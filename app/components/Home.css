@@ -1,7 +1,5 @@
 .container {
-  position: absolute;
-  top: 30%;
-  left: 10px;
+  position: relative;
   text-align: center;
 }
 
@@ -11,4 +9,8 @@
 
 .container a {
   font-size: 1.4rem;
+}
+
+.taskList {
+  text-align: left;
 }

@@ -14,3 +14,12 @@
 .taskList {
   text-align: left;
 }
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+th, td {
+  padding: 10px 10px;
+}

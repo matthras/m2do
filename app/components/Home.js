@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Home.css';
 import TaskList from './TaskList.js';
+import Eisenhower from './Eisenhower.js';
 
 // class TaskList extends Component {
 //   render() {
@@ -37,12 +38,12 @@ export default class Home extends Component {
     };
   }
   render() {
-    
     return (
       <div>
         <div className={styles.container} data-tid="container">
           <h2>m2do List</h2>
           <TaskList list={this.state.list} />
+          <Eisenhower />
         </div>
       </div>
     );
